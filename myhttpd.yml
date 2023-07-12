@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: httpd-container
-        image: 10.7.7.21:5000/myhttpd:1.0
+        image: HeoMiRim/ipnginx
         ports:
         - containerPort: 80
 ---
