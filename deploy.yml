@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ip-container
-        image: 10.7.7.21:5000/sbimage:7
+        image: 10.7.7.<자기번호>:5000/sbimage:7
         ports:
         - containerPort: 8085
 ---
@@ -26,7 +26,7 @@ spec:
   selector:
     app: sb
   ports:
-    - name: ip-port
+    - name: myhttpd-port
       protocol: TCP
       nodePort: 31000
       port: 8085
